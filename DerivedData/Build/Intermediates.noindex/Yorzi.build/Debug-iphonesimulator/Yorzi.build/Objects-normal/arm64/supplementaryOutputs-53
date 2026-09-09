@@ -1,0 +1,30 @@
+{
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Detail/WorkDetailViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/WorkDetailViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/WorkDetailViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/WorkDetailViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/WorkDetailViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/WorkDetailViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Root/ExploreViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/ExploreViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/ExploreViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/ExploreViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/ExploreViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/ExploreViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Root/HomeViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/HomeViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/HomeViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/HomeViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/HomeViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/HomeViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Root/InboxViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/InboxViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/InboxViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/InboxViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/InboxViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/InboxViewController.swiftdeps"
+  }
+}
