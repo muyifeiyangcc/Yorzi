@@ -160,8 +160,7 @@ final class CollabCallDetailViewController: BaseViewController {
             ("Date", display(call.date)),
             ("Budget", display(call.budget)),
             ("Roles needed", display(call.roles)),
-            ("Application deadline", display(call.deadline)),
-            ("Timing", display(call.timing))
+            ("Application deadline", display(call.deadline))
         ]
         let grid = UIStackView()
         grid.axis = .vertical
@@ -238,7 +237,7 @@ final class CollabCallDetailViewController: BaseViewController {
         let sheet = CustomSheetView(items: ["Report", "Block", "Cancel"]) { [weak self] item in
             guard let self else { return }
             if item == "Report" { self.push(ReportViewController(targetID: self.call.authorID)) }
-            else if item == "Block" { DataRepository.shared.block(self.call.authorID) }
+            else if item == "Block" { self.blockUserAndReturnToRoot(self.call.authorID) }
         }
         sheet.present(in: view.window ?? view)
     }

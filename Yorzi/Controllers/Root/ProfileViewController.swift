@@ -217,7 +217,7 @@ final class ProfileViewController: BaseViewController {
             if item == "Report" {
                 self?.push(ReportViewController(targetID: authorID))
             } else if item == "Block" {
-                DataRepository.shared.block(authorID)
+                self?.blockUserAndReturnToRoot(authorID)
             }
         }
         sheet.present(in: view.window ?? view)

@@ -36,7 +36,7 @@ final class WelcomeViewController: BaseViewController, UITextViewDelegate {
 
         let agreementRow = UIStackView(arrangedSubviews: [agreementButton, legalTextView])
         agreementRow.axis = .horizontal
-        agreementRow.alignment = .center
+        agreementRow.alignment = .top
         agreementRow.spacing = 6
 
         view.addSubview(newButton)
@@ -53,6 +53,7 @@ final class WelcomeViewController: BaseViewController, UITextViewDelegate {
         }
         agreementButton.snp.makeConstraints {
             $0.width.height.equalTo(12)
+            $0.top.equalToSuperview().offset(2)
         }
         legalTextView.snp.makeConstraints {
             $0.width.equalTo(252)
@@ -79,11 +80,31 @@ final class WelcomeViewController: BaseViewController, UITextViewDelegate {
 
         newButton.addAction(UIAction { _ in DataRepository.shared.enterGuest(); AppRouter.showTabs() }, for: .touchUpInside)
         emailButton.addAction(UIAction { [weak self] _ in self?.showEmailPath() }, for: .touchUpInside)
-        signUpButton.addAction(UIAction { [weak self] _ in self?.push(SignUpViewController()) }, for: .touchUpInside)
+        signUpButton.addAction(UIAction { [weak self] _ in self?.showSignUpPath() }, for: .touchUpInside)
     }
 
     private func showEmailPath() {
-        guard agreement.isOn else { let dialog = AppDialogView(title: "Agreement required", message: "Please accept the agreements before signing in.", actions: [.init(title: "OK", style: .accent, handler: nil)]); dialog.present(in: view); return }; push(SignInViewController())
+        guard requireAgreement() else { return }
+        push(SignInViewController())
+    }
+
+    private func showSignUpPath() {
+        guard requireAgreement() else { return }
+        push(SignUpViewController())
+    }
+
+    @discardableResult
+    private func requireAgreement() -> Bool {
+        guard agreement.isOn else {
+            let dialog = AppDialogView(
+                title: "Agreement required",
+                message: "Please accept the agreements before signing in.",
+                actions: [.init(title: "OK", style: .accent, handler: nil)]
+            )
+            dialog.present(in: view)
+            return false
+        }
+        return true
     }
 
     private func makePillButton(title: String) -> UIButton {

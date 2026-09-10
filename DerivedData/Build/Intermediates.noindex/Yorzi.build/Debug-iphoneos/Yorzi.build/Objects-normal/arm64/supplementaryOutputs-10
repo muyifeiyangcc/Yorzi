@@ -1,0 +1,30 @@
+{
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Yorzi/AppDelegate.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/AppDelegate.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/AppDelegate.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Yorzi/SceneDelegate.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SceneDelegate.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SceneDelegate.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Yorzi/ViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ViewController.swiftdeps"
+  }
+}

@@ -213,10 +213,7 @@ final class CreatorProfileViewController: BaseViewController {
             if item == "Report" {
                 self.push(ReportViewController(targetID: self.userID))
             } else if item == "Block User" {
-                DataRepository.shared.block(self.userID)
-                self.showMessage(title: "User blocked", message: "You will no longer see this user.") {
-                    self.navigationController?.popViewController(animated: true)
-                }
+                self.blockUserAndReturnToRoot(self.userID)
             }
         }
         sheet.present(in: view.window ?? view)

@@ -7,9 +7,11 @@ final class CollabCallCardView: UIView {
     var onTap: (() -> Void)?
     var onCollaborate: (() -> Void)?
     var onMore: (() -> Void)?
+    private let showsMore: Bool
 
-    init(call: CollabCall) {
+    init(call: CollabCall, showsMore: Bool = true) {
         self.call = call
+        self.showsMore = showsMore
         super.init(frame: .zero)
         setupUI()
     }
@@ -41,7 +43,7 @@ final class CollabCallCardView: UIView {
         moreButton.setImage(UIImage(systemName: "ellipsis"), for: .normal)
         moreButton.tintColor = AppTheme.ink
         moreButton.imageEdgeInsets = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
-        moreButton.isHidden = call.authorID == DataRepository.shared.currentUserID
+        moreButton.isHidden = !showsMore || call.authorID == DataRepository.shared.currentUserID
         moreButton.addAction(UIAction { [weak self] _ in self?.onMore?() }, for: .touchUpInside)
         imageView.addSubview(moreButton)
         moreButton.snp.makeConstraints { $0.top.equalToSuperview().offset(12); $0.trailing.equalToSuperview().inset(12); $0.size.equalTo(32) }
@@ -183,9 +185,9 @@ final class CollabCallCell: UITableViewCell {
     }
     required init?(coder: NSCoder) { nil }
 
-    func configure(call: CollabCall) {
+    func configure(call: CollabCall, showsMore: Bool = true) {
         cardView?.removeFromSuperview()
-        let card = CollabCallCardView(call: call)
+        let card = CollabCallCardView(call: call, showsMore: showsMore)
         card.onTap = { [weak self] in self?.onTap?() }
         card.onCollaborate = { [weak self] in self?.onCollaborate?() }
         card.onMore = { [weak self] in self?.onMore?() }

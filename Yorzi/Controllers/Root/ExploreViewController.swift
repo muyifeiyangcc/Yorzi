@@ -195,7 +195,7 @@ final class ExploreViewController: BaseViewController {
             list = list.filter { matchesSearch(searchText, values: searchValues(for: $0)) }
             works = list
         } else {
-            var list = DataRepository.shared.calls.filter { !DataRepository.shared.blockedIDs.contains($0.authorID) }
+            var list = DataRepository.shared.visibleCalls
             list = list.filter { matchesSearch(searchText, values: searchValues(for: $0)) }
             calls = list
         }
@@ -242,7 +242,7 @@ final class ExploreViewController: BaseViewController {
     private func showModeration(for authorID: UUID) {
         let sheet = CustomSheetView(items: ["Report", "Block", "Cancel"]) { [weak self] item in
             if item == "Report" { self?.push(ReportViewController(targetID: authorID)) }
-            else if item == "Block" { DataRepository.shared.block(authorID) }
+            else if item == "Block" { self?.blockUserAndReturnToRoot(authorID) }
         }
         sheet.present(in: view.window ?? view)
     }
@@ -295,7 +295,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: CollabCallCell.reuseID, for: indexPath) as! CollabCallCell
             let call = calls[indexPath.row]
-            cell.configure(call: call)
+            cell.configure(call: call, showsMore: false)
             cell.onTap = { [weak self] in self?.push(CollabCallDetailViewController(call: call)) }
             cell.onMore = { [weak self] in self?.showModeration(for: call.authorID) }
             cell.onCollaborate = { [weak self] in

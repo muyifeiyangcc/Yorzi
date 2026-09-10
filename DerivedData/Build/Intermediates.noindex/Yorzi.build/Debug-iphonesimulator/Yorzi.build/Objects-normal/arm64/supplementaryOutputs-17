@@ -1,23 +1,30 @@
 {
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Social/FollowersViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowersViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowersViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowersViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowersViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowersViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Social/FollowingViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowingViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowingViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowingViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowingViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/FollowingViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Social/PeopleListViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/PeopleListViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/PeopleListViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/PeopleListViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/PeopleListViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/PeopleListViewController.swiftdeps"
+  },
   "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Core/AppTheme.swift" : {
     "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppTheme.swiftconstvalues",
     "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppTheme.d",
     "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppTheme.dia",
     "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppTheme.o",
     "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppTheme.swiftdeps"
-  },
-  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Core/BaseViewController.swift" : {
-    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/BaseViewController.swiftconstvalues",
-    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/BaseViewController.d",
-    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/BaseViewController.dia",
-    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/BaseViewController.o",
-    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/BaseViewController.swiftdeps"
-  },
-  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Models/AppModels.swift" : {
-    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppModels.swiftconstvalues",
-    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppModels.d",
-    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppModels.dia",
-    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppModels.o",
-    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/arm64/AppModels.swiftdeps"
   }
 }

@@ -235,11 +235,98 @@ final class PostViewController: BaseViewController {
         preview.modalPresentationStyle = .fullScreen
         present(preview, animated: true)
     }
-    private func chipRow() -> UIView { let c = UIView(); let l = UILabel.appLabel("Work type", size: 12, weight: .medium); c.addSubview(l); l.snp.makeConstraints { $0.top.leading.trailing.equalToSuperview() }; let s = UIStackView(); s.axis = .horizontal; s.spacing = 8; c.addSubview(s); s.snp.makeConstraints { $0.top.equalTo(l.snp.bottom).offset(8); $0.leading.trailing.bottom.equalToSuperview() }; ["Portraits", "Outdoor Stories", "Motion"].forEach { t in let b = UIButton(type: .system); b.setTitle(t, for: .normal); b.titleLabel?.font = .systemFont(ofSize: 11); b.contentEdgeInsets = .init(top: 9, left: 14, bottom: 9, right: 14); b.layer.cornerRadius = 18; b.layer.borderWidth = 1; b.layer.borderColor = AppTheme.divider.cgColor; b.backgroundColor = t == workType ? AppTheme.ink : .white; b.setTitleColor(t == workType ? .white : AppTheme.secondary, for: .normal); b.addAction(UIAction { [weak self] _ in self?.workType = t; self?.renderForm() }, for: .touchUpInside); s.addArrangedSubview(b) }; return c }
+    private func chipRow() -> UIView {
+        let c = UIView()
+        let l = UILabel.appLabel("Work type", size: 12, weight: .medium)
+        c.addSubview(l)
+        l.snp.makeConstraints { $0.top.leading.trailing.equalToSuperview() }
+
+        let s = UIStackView()
+        s.axis = .horizontal
+        s.spacing = 8
+        c.addSubview(s)
+        s.snp.makeConstraints { $0.top.equalTo(l.snp.bottom).offset(8); $0.leading.trailing.bottom.equalToSuperview() }
+
+        ["Portraits", "Outdoor Stories", "Motion"].forEach { t in
+            let b = UIButton(type: .system)
+            b.setTitle(t, for: .normal)
+            b.titleLabel?.font = .systemFont(ofSize: 11)
+            b.contentEdgeInsets = .init(top: 9, left: 16, bottom: 9, right: 16)
+            b.setContentHuggingPriority(.required, for: .horizontal)
+            b.setContentCompressionResistancePriority(.required, for: .horizontal)
+            b.layer.cornerRadius = 18
+            b.layer.borderWidth = 1
+            b.layer.borderColor = AppTheme.divider.cgColor
+            b.backgroundColor = t == workType ? AppTheme.ink : .white
+            b.setTitleColor(t == workType ? .white : AppTheme.secondary, for: .normal)
+            b.addAction(UIAction { [weak self] _ in self?.workType = t; self?.renderForm() }, for: .touchUpInside)
+            s.addArrangedSubview(b)
+        }
+        return c
+    }
     private func twoColumns(left: FormField, right: FormField, rightTitle: String? = nil) -> UIView { if let rightTitle { right.titleLabel.text = rightTitle }; let r = UIStackView(arrangedSubviews: [left, right]); r.axis = .horizontal; r.spacing = 10; r.distribution = .fillEqually; return r }
     private func visibilityPicker() -> UIView { let c = UIView(); let l = UILabel.appLabel("Who Can See This?", size: 12, weight: .medium); c.addSubview(l); l.snp.makeConstraints { $0.top.leading.trailing.equalToSuperview() }; let card = UIView(); card.backgroundColor = .white; card.layer.borderWidth = 1; card.layer.borderColor = AppTheme.divider.cgColor; card.round(12); c.addSubview(card); card.snp.makeConstraints { $0.top.equalToSuperview().offset(20); $0.leading.trailing.bottom.equalToSuperview(); $0.height.equalTo(164) }; [WorkVisibility.`public`, .diveCircle, .onlyMe].enumerated().forEach { idx, value in let row = UIButton(type: .system); row.contentHorizontalAlignment = .left; row.setTitle(value.title, for: .normal); row.setTitleColor(AppTheme.ink, for: .normal); row.titleLabel?.font = .systemFont(ofSize: 12); card.addSubview(row); row.snp.makeConstraints { $0.leading.equalToSuperview().offset(14); $0.trailing.equalToSuperview().inset(14); $0.top.equalToSuperview().offset(idx * 54); $0.height.equalTo(54) }; let radio = UIView(); radio.layer.borderWidth = 1; radio.layer.borderColor = (visibility == value ? AppTheme.lavender : UIColor(hex: 0xD6DEDF)).cgColor; radio.round(9); row.addSubview(radio); radio.snp.makeConstraints { $0.trailing.centerY.equalToSuperview(); $0.size.equalTo(18) }; if visibility == value { let dot = UIView(); dot.backgroundColor = AppTheme.lavender; dot.round(5); radio.addSubview(dot); dot.snp.makeConstraints { $0.center.equalToSuperview(); $0.size.equalTo(10) } }; row.addAction(UIAction { [weak self] _ in self?.visibility = value; self?.renderForm() }, for: .touchUpInside); if idx < 2 { let line = UIView(); line.backgroundColor = AppTheme.divider; card.addSubview(line); line.snp.makeConstraints { $0.leading.trailing.equalToSuperview().inset(14); $0.top.equalTo(row.snp.bottom); $0.height.equalTo(1) } } }; return c }
     private func publishButton(title: String) -> UIButton { let b = UIButton.primary(title); b.snp.makeConstraints { $0.height.equalTo(50) }; b.addAction(UIAction { [weak self] _ in self?.publish() }, for: .touchUpInside); return b }
-    private func publish() { let title = mode.selectedSegmentIndex == 0 ? workTitle.textField.text : callTitle.textField.text; guard let title, !title.trimmingCharacters(in: .whitespaces).isEmpty else { showMessage(title: "Add a title", message: "A title is required before publishing."); return }; if mode.selectedSegmentIndex == 0 { DataRepository.shared.addWork(title: title, category: workType, location: location.textField.text ?? "", description: workDescription.text, visibility: visibility, mediaData: selectedMedia.first, mediaDatas: selectedMedia.isEmpty ? nil : selectedMedia, videoData: selectedMediaIsVideo ? selectedVideoData : nil) } else { DataRepository.shared.addCall(title: title, location: location.textField.text ?? "", date: date.text, budget: budget.textField.text ?? "", roles: roles.textField.text ?? "", deadline: deadline.text, description: projectDescription.text, mediaData: selectedMedia.first, mediaDatas: selectedMedia.isEmpty ? nil : selectedMedia, videoData: selectedMediaIsVideo ? selectedVideoData : nil) }; showMessage(title: "Published", message: "Your submission has been added.") }
+    private func publish() {
+        let isWork = mode.selectedSegmentIndex == 0
+        let title = isWork ? workTitle.textField.text : callTitle.textField.text
+        guard let title, !title.trimmingCharacters(in: .whitespaces).isEmpty else {
+            showMessage(title: "Add a title", message: "A title is required before publishing.")
+            return
+        }
+
+        if isWork {
+            DataRepository.shared.addWork(
+                title: title,
+                category: workType,
+                location: location.textField.text ?? "",
+                description: workDescription.text,
+                visibility: visibility,
+                mediaData: selectedMedia.first,
+                mediaDatas: selectedMedia.isEmpty ? nil : selectedMedia,
+                videoData: selectedMediaIsVideo ? selectedVideoData : nil
+            )
+        } else {
+            DataRepository.shared.addCall(
+                title: title,
+                location: location.textField.text ?? "",
+                date: date.text,
+                budget: budget.textField.text ?? "",
+                roles: roles.textField.text ?? "",
+                deadline: deadline.text,
+                description: projectDescription.text,
+                mediaData: selectedMedia.first,
+                mediaDatas: selectedMedia.isEmpty ? nil : selectedMedia,
+                videoData: selectedMediaIsVideo ? selectedVideoData : nil
+            )
+        }
+
+        resetForm()
+        showMessage(title: "Published", message: "Your submission has been added.") { [weak self] in
+            guard let self else { return }
+            if let tabs = self.tabBarController as? MainTabBarController { tabs.selectTab(0) }
+            else { self.tabBarController?.selectedIndex = 0 }
+        }
+    }
+
+    private func resetForm() {
+        mode.selectedSegmentIndex = 0
+        workType = "Portraits"
+        visibility = .public
+        selectedMedia.removeAll()
+        selectedMediaIsVideo = false
+        selectedVideoData = nil
+
+        [workTitle, workDescription, callTitle, projectDescription, location, date, budget, roles, deadline].forEach {
+            $0.textField.text = ""
+            $0.textView.text = ""
+            $0.textViewDidChange($0.textView)
+        }
+        shootDatePicker.setDate(Date(), animated: false)
+        view.endEditing(true)
+        renderForm()
+        scrollView.setContentOffset(.zero, animated: false)
+    }
 }
 
 extension PostViewController: PHPickerViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {

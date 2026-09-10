@@ -1,4 +1,0 @@
-
-module IQKeyboardManagerSwift.__Swift {
-  exclude header "IQKeyboardManagerSwift-Swift.h"
-}

@@ -170,7 +170,7 @@ private final class PeopleRowCell: UITableViewCell {
     func configure(user: AppUser, actionTitle: String, filled: Bool, action: @escaping () -> Void) {
         self.action = action
         nameLabel.text = user.name
-        detailLabel.text = "\(user.role) · \(user.location)"
+        detailLabel.text = user.location
         if let data = user.avatarData { avatarView.image = UIImage(data: data) }
         else { avatarView.image = UIImage(systemName: "person.crop.circle.fill"); avatarView.tintColor = AppTheme.lavender }
 

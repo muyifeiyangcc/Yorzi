@@ -1,4 +1,0 @@
-
-module IQKeyboardNotification.Swift {
-  header "IQKeyboardNotification-Swift.h"
-}

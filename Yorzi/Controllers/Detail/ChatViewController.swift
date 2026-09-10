@@ -86,8 +86,21 @@ final class ChatViewController: BaseViewController {
         more.backgroundColor = .white
         more.layer.cornerRadius = 22
         more.layer.masksToBounds = true
+        more.addAction(UIAction { [weak self] _ in self?.showMore() }, for: .touchUpInside)
         navBar.addSubview(more)
         more.snp.makeConstraints { $0.trailing.equalToSuperview().inset(15); $0.centerY.equalToSuperview(); $0.size.equalTo(44) }
+    }
+
+    private func showMore() {
+        let sheet = CustomSheetView(items: ["Report", "Block", "Cancel"]) { [weak self] item in
+            guard let self else { return }
+            if item == "Report" {
+                self.push(ReportViewController(targetID: self.participantID))
+            } else if item == "Block" {
+                self.blockUserAndReturnToRoot(self.participantID)
+            }
+        }
+        sheet.present(in: view.window ?? view)
     }
 
     private func setupTable() {

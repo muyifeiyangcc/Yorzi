@@ -1,4 +1,0 @@
-
-module SnapKit.Swift {
-  header "SnapKit-Swift.h"
-}

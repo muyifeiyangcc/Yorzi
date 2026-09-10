@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key><string>Camera access lets you capture work to share with creators.</string>
-	<key>NSPhotoLibraryUsageDescription</key><string>Photo access lets you choose work to share with creators.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key><string>Photo access lets you save downloaded work to your library.</string>
-	<key>NSMicrophoneUsageDescription</key><string>Microphone access lets you send voice messages.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

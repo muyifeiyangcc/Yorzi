@@ -82,57 +82,13 @@ private final class AIBannerView: UIControl {
     private func setup() {
         layer.cornerRadius = 16
         layer.masksToBounds = true
-        backgroundColor = AppTheme.ink
+        backgroundColor = .clear
 
-        // Background image
         let bg = UIImageView(image: UIImage(named: "ai_bg"))
         bg.contentMode = .scaleAspectFill
         bg.clipsToBounds = true
         addSubview(bg)
         bg.snp.makeConstraints { $0.edges.equalToSuperview() }
-
-        let overlay = UIView()
-        overlay.backgroundColor = UIColor(hex: 0x1E2A38).withAlphaComponent(0.55)
-        addSubview(overlay)
-        overlay.snp.makeConstraints { $0.edges.equalToSuperview() }
-
-        // AI title
-        let titleLabel = UILabel()
-        titleLabel.text = "AI Yorzi"
-        titleLabel.font = UIFont(name: "Georgia-Bold", size: 26) ?? .systemFont(ofSize: 26, weight: .bold)
-        titleLabel.textColor = .white
-        addSubview(titleLabel)
-        titleLabel.snp.makeConstraints { $0.top.equalToSuperview().offset(18); $0.leading.equalToSuperview().offset(18) }
-
-        // Subtitle
-        let subtitle = UILabel()
-        subtitle.text = "Ask for visual direction, collaboration ideas, or a refined project brief."
-        subtitle.font = .systemFont(ofSize: 12, weight: .regular)
-        subtitle.textColor = UIColor.white.withAlphaComponent(0.85)
-        subtitle.numberOfLines = 2
-        addSubview(subtitle)
-        subtitle.snp.makeConstraints { $0.top.equalTo(titleLabel.snp.bottom).offset(6); $0.leading.equalToSuperview().offset(18); $0.width.equalTo(200) }
-
-        // Open Chat button
-        let button = UIView()
-        button.backgroundColor = AppTheme.lavender
-        button.layer.cornerRadius = 18
-        button.layer.masksToBounds = true
-        addSubview(button)
-        button.snp.makeConstraints { $0.leading.equalToSuperview().offset(18); $0.bottom.equalToSuperview().inset(16); $0.height.equalTo(36) }
-
-        let btnLabel = UILabel()
-        btnLabel.text = "Open Chat"
-        btnLabel.font = .systemFont(ofSize: 15, weight: .semibold)
-        btnLabel.textColor = .white
-        button.addSubview(btnLabel)
-        btnLabel.snp.makeConstraints { $0.leading.equalToSuperview().offset(16); $0.centerY.equalToSuperview() }
-
-        let arrow = UIImageView(image: UIImage(systemName: "arrow.right"))
-        arrow.tintColor = .white
-        arrow.contentMode = .scaleAspectFit
-        button.addSubview(arrow)
-        arrow.snp.makeConstraints { $0.leading.equalTo(btnLabel.snp.trailing).offset(8); $0.trailing.equalToSuperview().inset(14); $0.centerY.equalToSuperview(); $0.size.equalTo(16) }
 
         addTarget(self, action: #selector(tapped), for: .touchUpInside)
     }

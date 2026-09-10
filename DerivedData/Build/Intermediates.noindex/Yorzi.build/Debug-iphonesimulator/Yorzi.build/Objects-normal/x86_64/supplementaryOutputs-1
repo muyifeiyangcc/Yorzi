@@ -1,4 +1,11 @@
 {
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Auth/AuthUI.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AuthUI.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AuthUI.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AuthUI.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AuthUI.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AuthUI.swiftdeps"
+  },
   "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Auth/EULAViewController.swift" : {
     "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/EULAViewController.swiftconstvalues",
     "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/EULAViewController.d",
@@ -19,12 +26,5 @@
     "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ProfileSetupViewController.dia",
     "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ProfileSetupViewController.o",
     "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ProfileSetupViewController.swiftdeps"
-  },
-  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Auth/SignInViewController.swift" : {
-    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.swiftconstvalues",
-    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.d",
-    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.dia",
-    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.o",
-    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.swiftdeps"
   }
 }

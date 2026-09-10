@@ -64,6 +64,14 @@ final class MainTabBarController: UITabBarController, UITabBarControllerDelegate
         syncTabBarVisibility(for: selectedViewController)
     }
 
+    func selectTab(_ index: Int) {
+        guard let controllers = viewControllers, controllers.indices.contains(index) else { return }
+        if let navigationController = controllers[index] as? UINavigationController {
+            navigationController.popToRootViewController(animated: false)
+        }
+        customTabBar.select(index)
+    }
+
     // MARK: Navigation visibility
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
@@ -178,10 +186,11 @@ private final class CustomTabBar: UIView {
             button.snp.makeConstraints { $0.size.equalTo(48) }
             buttons.append(button)
         }
-        select(0)
+        // Set the initial visual state without treating setup as a user tap.
+        select(0, notify: false)
     }
 
-    private func select(_ index: Int) {
+    fileprivate func select(_ index: Int, notify: Bool = true) {
         selectedIdx = index
         for (i, button) in buttons.enumerated() {
             let selected = i == index
@@ -190,6 +199,6 @@ private final class CustomTabBar: UIView {
             button.layer.cornerRadius = 16
             button.layer.masksToBounds = true
         }
-        onSelect?(index)
+        if notify { onSelect?(index) }
     }
 }

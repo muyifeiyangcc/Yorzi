@@ -228,6 +228,20 @@ final class WorkCardView: UIControl {
         (work.collaborators ?? []).forEach { tag in
             collabStack.addArrangedSubview(makeCollabPill(tag))
         }
+        let hasCollaborators = !(work.collaborators ?? []).isEmpty
+        collabScroll.isHidden = !hasCollaborators
+        if !hasCollaborators {
+            collabScroll.snp.remakeConstraints {
+                $0.top.equalTo(metaLabel.snp.bottom).offset(10)
+                $0.leading.trailing.equalToSuperview().inset(14)
+                $0.height.equalTo(0)
+            }
+            divider.snp.remakeConstraints {
+                $0.top.equalTo(metaLabel.snp.bottom).offset(10)
+                $0.leading.trailing.equalToSuperview().inset(14)
+                $0.height.equalTo(1)
+            }
+        }
     }
 
     @objc private func cardTapped() { onTap?() }

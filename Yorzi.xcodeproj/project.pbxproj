@@ -223,6 +223,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yorzi/Yorzi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Yorzi;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Yorzi requests camera access to let you take photos and videos of your outfits for your profile and posts. Camera access is only used when you choose to capture content, and your media will not be shared without your permission.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Yorzi requests microphone access to support voice messages and audio interactions within the community. Audio recording is only activated when you choose to use voice features, and we will not record or share your audio without your permission. ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo access lets you save downloaded work to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Yorzi requests photo library access to let you select photos and videos from your device for profile updates and outfit sharing. Only the media you choose will be accessed and used for your selected actions.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -261,6 +265,10 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Yorzi/Yorzi/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Yorzi;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Yorzi requests camera access to let you take photos and videos of your outfits for your profile and posts. Camera access is only used when you choose to capture content, and your media will not be shared without your permission.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Yorzi requests microphone access to support voice messages and audio interactions within the community. Audio recording is only activated when you choose to use voice features, and we will not record or share your audio without your permission. ";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Photo access lets you save downloaded work to your library.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Yorzi requests photo library access to let you select photos and videos from your device for profile updates and outfit sharing. Only the media you choose will be accessed and used for your selected actions.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;

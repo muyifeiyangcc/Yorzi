@@ -38,6 +38,15 @@ class BaseViewController: UIViewController {
         controller.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(controller, animated: true)
     }
+
+    func blockUserAndReturnToRoot(_ userID: UUID) {
+        DataRepository.shared.block(userID)
+        if let navigationController {
+            navigationController.popToRootViewController(animated: true)
+        } else if presentingViewController != nil {
+            dismiss(animated: true)
+        }
+    }
 }
 
 final class FormField: UIView, UITextViewDelegate {

@@ -1,0 +1,30 @@
+{
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Settings/RechargeViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/RechargeViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/RechargeViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/RechargeViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/RechargeViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/RechargeViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Settings/ReportViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ReportViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ReportViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ReportViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ReportViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/ReportViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Settings/SettingsViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SettingsViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SettingsViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SettingsViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SettingsViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/SettingsViewController.swiftdeps"
+  },
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Social/BlockListViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/BlockListViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/BlockListViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/BlockListViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/BlockListViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphoneos/Yorzi.build/Objects-normal/arm64/BlockListViewController.swiftdeps"
+  }
+}

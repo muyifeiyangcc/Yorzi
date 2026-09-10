@@ -6,7 +6,7 @@
 	<integer>12</integer>
 	<key>logs</key>
 	<dict>
-		<key>91311F97-2E29-4E4C-A384-3975A677B3F2</key>
+		<key>460A9C07-A104-4663-A45E-25B17E8560B5</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,21 +15,21 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>91311F97-2E29-4E4C-A384-3975A677B3F2.xcactivitylog</string>
+			<string>460A9C07-A104-4663-A45E-25B17E8560B5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>E</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>6</integer>
+				<integer>0</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>Yorzi project</string>
@@ -38,15 +38,15 @@
 			<key>schemeIdentifier-sharedScheme</key>
 			<integer>1</integer>
 			<key>signature</key>
-			<string>Building workspace Yorzi with scheme Yorzi and configuration Debug</string>
+			<string>Building project Yorzi with scheme Yorzi and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>810540928.93573999</real>
+			<real>810711418.96347702</real>
 			<key>timeStoppedRecording</key>
-			<real>810540937.17116404</real>
+			<real>810711424.00066996</real>
 			<key>title</key>
-			<string>Building workspace Yorzi with scheme Yorzi and configuration Debug</string>
+			<string>Building project Yorzi with scheme Yorzi and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>91311F97-2E29-4E4C-A384-3975A677B3F2</string>
+			<string>460A9C07-A104-4663-A45E-25B17E8560B5</string>
 		</dict>
 	</dict>
 </dict>

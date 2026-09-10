@@ -1,4 +1,11 @@
 {
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Auth/SignInViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignInViewController.swiftdeps"
+  },
   "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Auth/SignUpViewController.swift" : {
     "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignUpViewController.swiftconstvalues",
     "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/SignUpViewController.d",
@@ -13,18 +20,11 @@
     "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/WelcomeViewController.o",
     "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/WelcomeViewController.swiftdeps"
   },
-  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Detail/ChatViewController.swift" : {
-    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ChatViewController.swiftconstvalues",
-    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ChatViewController.d",
-    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ChatViewController.dia",
-    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ChatViewController.o",
-    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/ChatViewController.swiftdeps"
-  },
-  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Detail/CreatorProfileViewController.swift" : {
-    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/CreatorProfileViewController.swiftconstvalues",
-    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/CreatorProfileViewController.d",
-    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/CreatorProfileViewController.dia",
-    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/CreatorProfileViewController.o",
-    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/CreatorProfileViewController.swiftdeps"
+  "/Users/myfy/Desktop/code/Yorzi/Yorzi/Yorzi/Controllers/Detail/AIChatViewController.swift" : {
+    "const-values" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AIChatViewController.swiftconstvalues",
+    "dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AIChatViewController.d",
+    "diagnostics" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AIChatViewController.dia",
+    "object" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AIChatViewController.o",
+    "swift-dependencies" : "/Users/myfy/Desktop/code/Yorzi/Yorzi/DerivedData/Build/Intermediates.noindex/Yorzi.build/Debug-iphonesimulator/Yorzi.build/Objects-normal/x86_64/AIChatViewController.swiftdeps"
   }
 }

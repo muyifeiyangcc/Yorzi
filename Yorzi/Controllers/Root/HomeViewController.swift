@@ -11,7 +11,7 @@ final class HomeViewController: BaseViewController {
     private var observer: NSObjectProtocol?
     private var works: [Work] = []
 
-    private let categories = ["All", "Portraits", "Outdoor", "Motion", "Open to collab"]
+    private let categories = ["All", "Portraits", "Outdoor Stories", "Motion"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -156,6 +156,8 @@ final class HomeViewController: BaseViewController {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { $0.top.equalTo(filterScroll.snp.bottom).offset(12); $0.leading.trailing.bottom.equalToSuperview() }
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 80, right: 0)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 400
         reload()
     }
 
@@ -163,7 +165,7 @@ final class HomeViewController: BaseViewController {
         var list = DataRepository.shared.visibleWorks
         if selectedTab == 1 { list = list.filter { DataRepository.shared.isFollowing($0.authorID) } }
         let filter = categories[selectedFilter]
-        if filter != "All" { list = list.filter { $0.category == filter || (filter == "Open to collab" && $0.openToCollab) } }
+        if filter != "All" { list = list.filter { $0.category == filter } }
         works = list
         tableView.reloadData()
     }
@@ -173,7 +175,7 @@ final class HomeViewController: BaseViewController {
     private func showModeration(for work: Work) {
         let sheet = CustomSheetView(items: ["Report", "Block", "Cancel"]) { [weak self] item in
             if item == "Report" { self?.push(ReportViewController(targetID: work.authorID)) }
-            else if item.hasPrefix("Block") { DataRepository.shared.block(work.authorID) }
+            else if item.hasPrefix("Block") { self?.blockUserAndReturnToRoot(work.authorID) }
         }
         sheet.present(in: view.window ?? view)
     }
@@ -210,5 +212,5 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         push(WorkDetailViewController(work: works[indexPath.row]))
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { 400 }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat { UITableView.automaticDimension }
 }
